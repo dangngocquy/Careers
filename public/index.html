@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ae8f3d" />
+  <meta property="og:url" content="https://checklist.niso.com.vn:3002/" />
+  <meta property="og:image" content="%PUBLIC_URL%/shop.png" />
+  <meta name="description" content="Welcome to Checklist NISO by Đặng Ngọc Quý" />
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/favicon.ico">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/favicon.ico" sizes="640x1136">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/favicon.ico" sizes="750x1334">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/favicon.ico" sizes="1125x2436">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/favicon.ico" sizes="1242x2208">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/favicon.ico" sizes="1536x2048">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/favicon.ico" sizes="1668x2224">
+  <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/favicon.ico" sizes="2048x2732">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="NISO CHECKLIST">
+
+  <script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
+</head>
+
+<body style="background-color: #f3f4f6;">
+  <div id="root"></div>
+  <script>
+    console.info("%c NISO Activity %c WEB BY QUÝ https://github.com/dangngocquy/", "font-weight: bold; font-size: 3em; color: #ae8f3d; text-shadow: 3px 3px 0 white , 6px 6px 0 #8a6a16 , 9px 9px 0 #8a6a16, 12px 12px 0 #ae8f3d;", "font-weight: bold; font-size: 1.5em; color: black;");
+  </script>
+</body>
+
 </html>

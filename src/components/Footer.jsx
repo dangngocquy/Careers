@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer__center">
-                <div class="footer__center-item img-niso"><img src="https://firebasestorage.googleapis.com/v0/b/nisosurvey-c32e4.appspot.com/o/CAREERS%2FArtboard%20610x.png?alt=media&token=4e1b10ae-397b-429f-ad54-14a33838c8fb" alt="Logo"/></div>
+                <div className="footer__center-item img-niso"><img src="https://firebasestorage.googleapis.com/v0/b/nisosurvey-c32e4.appspot.com/o/CAREERS%2FArtboard%20610x.png?alt=media&token=4e1b10ae-397b-429f-ad54-14a33838c8fb" alt="Logo"/></div>
                 </div>
                 <div className="footer__bottom">
                     <div className="footer__bottom-title" style={{ color: 'rgb(255, 255, 255)' }}>Theo dõi chúng tôi để nhận tin mới
