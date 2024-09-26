@@ -19,7 +19,7 @@ const Danhsachviec = lazy(() => import('./admin/components/Danhsachviec'));
 const App = () => {
   return (
     <div className='App'>
-      <BrowserRouter>
+      <BrowserRouter basename="/Careers"> 
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route path="/" element={<Container />}>
