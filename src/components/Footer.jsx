@@ -17,12 +17,12 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="footer__top-more"><a href="/viec-lam-cua-hang">Việc làm cửa hàng</a><a
-                        href="/viec-lam-van-phong">Việc làm văn phòng</a><a href="/tra-cuu-ket-qua">Tra cứu kết quả</a>
+                    <div className="footer__top-more"><a href="/viec-lam-cua-hang/store">Việc làm cửa hàng</a><a
+                        href="/viec-lam-van-phong/office">Việc làm văn phòng</a><a href="/tra-cuu-ket-qua">Tra cứu kết quả</a>
                     </div>
                 </div>
                 <div className="footer__center">
-                <div className="footer__center-item img-niso"><img src="https://firebasestorage.googleapis.com/v0/b/nisosurvey-c32e4.appspot.com/o/CAREERS%2FArtboard%20610x.png?alt=media&token=4e1b10ae-397b-429f-ad54-14a33838c8fb" alt="Logo"/></div>
+                    <div className="footer__center-item img-niso"><img src="https://firebasestorage.googleapis.com/v0/b/nisosurvey-c32e4.appspot.com/o/CAREERS%2FArtboard%20610x.png?alt=media&token=4e1b10ae-397b-429f-ad54-14a33838c8fb" alt="Logo" /></div>
                 </div>
                 <div className="footer__bottom">
                     <div className="footer__bottom-title" style={{ color: 'rgb(255, 255, 255)' }}>Theo dõi chúng tôi để nhận tin mới
@@ -45,13 +45,13 @@ const Footer = () => {
             </div>
             <div className="footer-mb__wrapper">
                 <div className="footer__tab">
-                    <div className="footer__tab-item "><span className="footer__tab-item-icon"><svg width="20px" height="20px"
+                    <div className="footer__tab-item " onClick={() => window.location.href = 'viec-lam-cua-hang/store'}><span className="footer__tab-item-icon"><svg width="20px" height="20px"
                         viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M18.2503 6.33332L16.5837 2.16666C16.5003 1.83332 16.167 1.66666 15.8337 1.66666H4.16699C3.83366 1.66666 3.50033 1.83332 3.41699 2.16666L1.75033 6.33332C1.66699 6.41666 1.66699 6.58332 1.66699 6.66666C1.66699 7.83332 2.33366 8.91666 3.33366 9.49999V17.5C3.33366 18 3.66699 18.3333 4.16699 18.3333H15.8337C16.3337 18.3333 16.667 18 16.667 17.5V9.49999C17.667 8.91666 18.3337 7.83332 18.3337 6.66666C18.3337 6.58332 18.3337 6.41666 18.2503 6.33332ZM15.0003 16.6667H12.5003V12.5C12.5003 12 12.167 11.6667 11.667 11.6667H8.33366C7.83366 11.6667 7.50033 12 7.50033 12.5V16.6667H5.00033V9.99999C6.00033 9.99999 6.83366 9.58332 7.50033 8.83332C8.66699 10.25 10.7503 10.4167 12.167 9.16666C12.3337 9.08332 12.417 8.91666 12.5003 8.83332C13.167 9.58332 14.0003 9.99999 15.0003 9.99999V16.6667Z"
                             fill="currentColor"></path>
                     </svg></span>Việc làm cửa hàng</div>
-                    <div className="footer__tab-item "><span className="footer__tab-item-icon"><svg width="20px" height="20px"
+                    <div className="footer__tab-item " onClick={() => window.location.href = '/viec-lam-van-phong/office'}><span className="footer__tab-item-icon"><svg width="20px" height="20px"
                         viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M18.0003 16.6667H17.167V2.49999C17.167 1.99999 16.8337 1.66666 16.3337 1.66666H4.66699C4.16699 1.66666 3.83366 1.99999 3.83366 2.49999V16.6667H3.00033C2.50033 16.6667 2.16699 17 2.16699 17.5C2.16699 18 2.50033 18.3333 3.00033 18.3333H18.0003C18.5003 18.3333 18.8337 18 18.8337 17.5C18.8337 17 18.5003 16.6667 18.0003 16.6667ZM8.00033 4.99999H8.83366C9.33366 4.99999 9.66699 5.33332 9.66699 5.83332C9.66699 6.33332 9.33366 6.66666 8.83366 6.66666H8.00033C7.50033 6.66666 7.16699 6.33332 7.16699 5.83332C7.16699 5.33332 7.50033 4.99999 8.00033 4.99999ZM7.16699 9.16666C7.16699 8.66666 7.50033 8.33332 8.00033 8.33332H8.83366C9.33366 8.33332 9.66699 8.66666 9.66699 9.16666C9.66699 9.66666 9.33366 9.99999 8.83366 9.99999H8.00033C7.50033 9.99999 7.16699 9.66666 7.16699 9.16666ZM13.0003 16.6667H8.00033V12.5C8.00033 12 8.33366 11.6667 8.83366 11.6667H12.167C12.667 11.6667 13.0003 12 13.0003 12.5V16.6667ZM13.0003 9.99999H12.167C11.667 9.99999 11.3337 9.66666 11.3337 9.16666C11.3337 8.66666 11.667 8.33332 12.167 8.33332H13.0003C13.5003 8.33332 13.8337 8.66666 13.8337 9.16666C13.8337 9.66666 13.5003 9.99999 13.0003 9.99999ZM13.0003 6.66666H12.167C11.667 6.66666 11.3337 6.33332 11.3337 5.83332C11.3337 5.33332 11.667 4.99999 12.167 4.99999H13.0003C13.5003 4.99999 13.8337 5.33332 13.8337 5.83332C13.8337 6.33332 13.5003 6.66666 13.0003 6.66666Z"
