@@ -34,14 +34,14 @@ const Home = () => {
         const baseUrl = workBlockLabel === 'Khối cửa hàng'
             ? `viec-lam-cua-hang/${job.workBlock}/${job.title}`
             : `viec-lam-van-phong/${job.workBlock}/${job.title}`;
-        window.location.href = baseUrl;
+        navigate(baseUrl);
     };
 
     const renderJobItems = (workBlock) => {
         if (loading) {
             return Array(1).fill(null).map((_, index) => (
-                <div className="unit-tag__job-item text-ellipsis" >
-                <Skeleton key={index} active paragraph={{ rows: 1 }} title={false} />
+                <div className="unit-tag__job-item text-ellipsis" key={index}>
+                    <Skeleton active paragraph={{ rows: 1 }} title={false} />
                 </div>
             ));
         }

@@ -104,7 +104,7 @@ function List() {
         const baseUrl = workBlockLabel === 'Khối cửa hàng'
             ? `${job.workBlock}/${job.title}` //Nếu store
             : `${job.workBlock}/${job.title}`; //Nếu office
-        window.location.href = baseUrl;
+            navigate(baseUrl)
     };
 
     const handleApplyClick = (e, jobId) => {

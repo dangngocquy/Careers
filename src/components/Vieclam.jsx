@@ -74,7 +74,7 @@ function Vieclam() {
         const baseUrl = workBlockLabel === 'Khối cửa hàng'
             ? `${job.title}` //Nếu store
             : `${job.title}`; //Nếu office
-        window.location.href = baseUrl;
+            navigate(baseUrl)
     };
 
     return (
