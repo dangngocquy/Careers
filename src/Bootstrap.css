@@ -10343,7 +10343,7 @@ h2 {
 }
 
 .custom-radio__container--active {
-    border: 1px solid #ff8c00
+    border: 1px solid #ae8f3d
 }
 
 .custom-radio__container label {
@@ -15841,7 +15841,7 @@ h2 {
 .MuiInputBase-root {
     color: rgba(0, 0, 0, 0.87);
     cursor: text;
-    display: inline-flex;
+    /* display: inline-flex; */
     position: relative;
     font-size: 1rem;
     box-sizing: border-box;

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './css/Home.css';
 import SearchHome from './SearchHome/SearchHome';
-import { useNavigate } from 'react-router-dom';
 import Hot from './SearchHome/Hot';
 import { db } from '../config';
 import { collection, getDocs } from 'firebase/firestore';
@@ -10,7 +9,6 @@ import { Skeleton } from 'antd';
 const Home = () => {
     const [jobs, setJobs] = useState([]);
     const [loading, setLoading] = useState(true);
-    const navigate = useNavigate();
 
     useEffect(() => {
         fetchJobs();
@@ -32,9 +30,9 @@ const Home = () => {
     const handleJobClick = (job) => {
         const workBlockLabel = job.workBlock === 'store' ? 'Khối cửa hàng' : 'Khối văn phòng';
         const baseUrl = workBlockLabel === 'Khối cửa hàng'
-            ? `viec-lam-cua-hang/${job.workBlock}/${job.title}`
-            : `viec-lam-van-phong/${job.workBlock}/${job.title}`;
-        navigate(baseUrl);
+            ? `/viec-lam-cua-hang/${job.workBlock}/${job.title}`
+            : `/viec-lam-van-phong/${job.workBlock}/${job.title}`;
+            window.location.href = `${baseUrl}`;
     };
 
     const renderJobItems = (workBlock) => {
@@ -85,7 +83,7 @@ const Home = () => {
                                 <div className="unit-tag__jobs">
                                     {renderJobItems('store')}
                                 </div>
-                                <div className="unit-tag__btn-more" onClick={() => navigate('/viec-lam-cua-hang/store')}>Xem tất cả công việc khối cửa hàng</div>
+                                <div className="unit-tag__btn-more"  onClick={() => window.open('/viec-lam-cua-hang/store', '_blank')} target="_blank">Xem tất cả công việc khối cửa hàng</div>
                             </div>
                         </div>
                     </div>
@@ -99,7 +97,7 @@ const Home = () => {
                                 <div className="unit-tag__jobs">
                                     {renderJobItems('office')}
                                 </div>
-                                <div className="unit-tag__btn-more" onClick={() => navigate('/viec-lam-van-phong/office')}>Xem tất cả công việc khối văn phòng</div>
+                                <div className="unit-tag__btn-more" onClick={() => window.open('/viec-lam-van-phong/office', '_blank')}>Xem tất cả công việc khối văn phòng</div>
                             </div>
                         </div>
                     </div>

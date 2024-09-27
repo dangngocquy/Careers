@@ -21,3 +21,13 @@
 :where(.css-dev-only-do-not-override-5wsri9).ant-menu-dark, :where(.css-dev-only-do-not-override-5wsri9).ant-menu-dark>.ant-menu{
     background-color: #ae8f3d;
 }
+
+:where(.css-dev-only-do-not-override-5wsri9).ant-form-item{
+    margin-bottom: 0;
+}
+
+.flex-niso-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

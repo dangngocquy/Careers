@@ -3,13 +3,18 @@ import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
     const location = useLocation();
+
+    const handleNavigation = (path) => {
+        window.location.href = path;
+    };
+
     return (
         <>
             <div className="header__container " style={{ background: '#ae8f3d' }}>
-                <Link to="/" className="header__icon text__niso">NISO CAREERS</Link>
+                <Link onClick={() => handleNavigation("/")} className="header__icon text__niso">NISO CAREERS</Link>
                 <div className="header__tab">
-                    <Link
-                        to="/viec-lam-cua-hang/store"
+                    <div
+                        onClick={() => handleNavigation("/viec-lam-cua-hang/store")}
                         className={`header__tab-item ${location.pathname === "/viec-lam-cua-hang/store" ? "active" : ""}`}
                     >
                         <span className="">
@@ -18,9 +23,9 @@ function Header() {
                             </svg>
                         </span>
                         Việc làm  cửa hàng
-                    </Link>
-                    <Link
-                        to="/viec-lam-van-phong/office"
+                    </div>
+                    <div
+                        onClick={() => handleNavigation("/viec-lam-van-phong/office")}
                         className={`header__tab-item ${location.pathname === "/viec-lam-van-phong/office" ? "active" : ""}`}
                     >
                         <span className="">
@@ -29,9 +34,9 @@ function Header() {
                             </svg>
                         </span>
                         Việc làm  văn phòng
-                    </Link>
-                    <Link
-                        to="/tra-cuu-ket-qua"
+                    </div>
+                    <div
+                        onClick={() => handleNavigation("/tra-cuu-ket-qua")}
                         className={`header__tab-item ${location.pathname === "/tra-cuu-ket-qua" ? "active" : ""}`}
                     >
                         <span className="">
@@ -40,12 +45,12 @@ function Header() {
                             </svg>
                         </span>
                         Tra cứu kết quả
-                    </Link>
+                    </div>
                 </div>
             </div>
             <div className="footer-mb__wrapper">
                 <div className="footer__tab">
-                    <Link to="viec-lam-cua-hang" className="footer__tab-item ">
+                    <div onClick={() => handleNavigation("/viec-lam-cua-hang")} className="footer__tab-item ">
                         <span className="footer__tab-item-icon">
                             <svg width="20px" height="20px" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -53,17 +58,17 @@ function Header() {
                             </svg>
                         </span>
                         Việc làm cửa hàng
-                    </Link>
-                    <Link to="viec-lam-van-phong" className="footer__tab-item ">
+                    </div>
+                    <div onClick={() => handleNavigation("/viec-lam-van-phong")} className="footer__tab-item ">
                         <span className="footer__tab-item-icon">
                             <svg width="20px" height="20px" viewBox="0 0 21 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.0003 16.6667H17.167V2.49999C17.167 1.99999 16.8337 1.66666 16.3337 1.66666H4.66699C4.16699 1.66666 3.83366 1.99999 3.83366 2.49999V16.6667H3.00033C2.50033 16.6667 2.16699 17 2.16699 17.5C2.16699 18 2.50033 18.3333 3.00033 18.3333H18.0003C18.5003 18.3333 18.8337 18 18.8337 17.5C18.8337 17 18.5003 16.6667 18.0003 16.6667ZM8.00033 4.99999H8.83366C9.33366 4.99999 9.66699 5.33332 9.66699 5.83332C9.66699 6.33332 9.33366 6.66666 8.83366 6.66666H8.00033C7.50033 6.66666 7.16699 6.33332 7.16699 5.83332C7.16699 5.33332 7.50033 4.99999 8.00033 4.99999ZM7.16699 9.16666C7.16699 8.66666 7.50033 8.33332 8.00033 8.33332H8.83366C9.33366 8.33332 9.66699 8.66666 9.66699 9.16666C9.66699 9.66666 9.33366 9.99999 8.83366 9.99999H8.00033C7.50033 9.99999 7.16699 9.66666 7.16699 9.16666ZM13.0003 16.6667H8.00033V12.5C8.00033 12 8.33366 11.6667 8.83366 11.6667H12.167C12.667 11.6667 13.0003 12 13.0003 12.5V16.6667ZM13.0003 9.99999H12.167C11.667 9.99999 11.3337 9.66666 11.3337 9.16666C11.3337 8.66666 11.667 8.33332 12.167 8.33332H13.0003C13.5003 8.33332 13.8337 8.66666 13.8337 9.16666C13.8337 9.66666 13.5003 9.99999 13.0003 9.99999ZM13.0003 6.66666H12.167C11.667 6.66666 11.3337 6.33332 11.3337 5.83332C11.3337 5.33332 11.667 4.99999 12.167 4.99999H13.0003C13.5003 4.99999 13.8337 5.33332 13.8337 5.83332C13.8337 6.33332 13.5003 6.66666 13.0003 6.66666Z" fill="currentColor"></path>
+                                <path d="M18.0003 16.6667H17.167V2.49999C17.167 1.99999 16.8337 1.66666 16.3337 1.66666H4.66699C4.16699 1.66666 3.83366 1.99999 3.83366 2.49999V16.6667H3.00033C2.50033 16.6667 2.16699 17 2.16699 17.5C2.16699 18 2.50033 18.3333 3.00033 18.3333H18.0003C18.5003 18.3333 18.8337 18 18.8337 17.5C18.8337 17 18.5003 16.6667 18.0003 16.6667ZM8.00033 4.99999H8.83366C9.33366 4.99999 9.66699 5.33332 9.66699 5.83332C9.66699 6.33332 9.33366 6.66666 8.83366 6.66666H8.00033C7.50033 6.66666 7.16699 6.33332 7.16699 5.83332C7.16699 5.33332 7.50033 4.99999 8.00033 4.99999ZM7.16699 9.16666C7.16699 8.66666 7.50033 8.33332 8.00033 8.33332H8.83366C9.33366 8.33332 9.66699 8.66666 9.66699 9.16666C9.66699 9.66666 9.33366 9.99999 8.83366 9.99999H8.00033C7.50033 9.99999 7.16699 9.666667.16699 9.16666ZM13.0003 16.6667H8.00033V12.5C8.00033 12 8.33366 11.6667 8.83366 11.6667H12.167C12.667 11.6667 13.0003 12 13.0003 12.5V16.6667ZM13.0003 9.99999H12.167C11.667 9.99999 11.3337 9.66666 11.3337 9.16666C11.3337 8.66666 11.667 8.33332 12.167 8.33332H13.0003C13.5003 8.33332 13.8337 8.66666 13.8337 9.16666C13.8337 9.66666 13.5003 9.99999 13.0003 9.99999ZM13.0003 6.66666H12.167C11.667 6.66666 11.3337 6.33332 11.3337 5.83332C11.3337 5.33332 11.667 4.99999 12.167 4.99999H13.0003C13.5003 4.99999 13.8337 5.33332 13.8337 5.83332C13.8337 6.33332 13.5003 6.66666 13.0003 6.66666Z" fill="currentColor"></path>
                             </svg>
                         </span>
                         Việc làm văn phòng
-                    </Link>
-                    <Link to="tra-cuu-ket-qua" className="footer__tab-item ">
+                    </div>
+                    <div onClick={() => handleNavigation("/tra-cuu-ket-qua")} className="footer__tab-item ">
                         <span className="footer__tab-item-icon">
                             <svg width="20px" height="20px" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +76,7 @@ function Header() {
                             </svg>
                         </span>
                         Tra cứu kết quả
-                    </Link>
+                    </div>
                 </div>
             </div>
         </>

@@ -3,6 +3,7 @@ import React from 'react'
 function Loading() {
     return (
         <div className="load-page__loading">
+            <title>NISO - Tuyển dụng</title>
             <span className="loader"><span className="loader-inner"></span></span>
             <div className="load-page__loading-title">Loading...</div>
         </div>

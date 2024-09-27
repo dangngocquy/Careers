@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { collection, query, where, getDocs } from 'firebase/firestore';
 import { db } from '../config';
 import { Pagination, Skeleton } from 'antd';
 import Loc from './SearchHome/Loc';
 
 function List() {
-    const navigate = useNavigate();
     const { workBlock } = useParams();
     const [jobs, setJobs] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -85,7 +84,7 @@ function List() {
                         <div className="job-list__item-deadline">Hạn nộp {job.deadline}</div>
                         <div
                             className="job-list__item-btn-apply"
-                            onClick={(e) => handleApplyClick(e, job.id)}
+                            onClick={(e) => handleApplyClick(e, job.title)}
                         >
                             Ứng tuyển ngay
                         </div>
@@ -102,15 +101,15 @@ function List() {
     const handleJobClick = (job) => {
         const workBlockLabel = isStoreJobs ? 'Khối cửa hàng' : 'Khối văn phòng';
         const baseUrl = workBlockLabel === 'Khối cửa hàng'
-            ? `${job.workBlock}/${job.title}` //Nếu store
-            : `${job.workBlock}/${job.title}`; //Nếu office
-            navigate(baseUrl)
+            ? `/viec-lam-cua-hang/${job.workBlock}/${job.title}` //Nếu store
+            : `/viec-lam-van-phong/${job.workBlock}/${job.title}`; //Nếu office
+            window.location.href = `${baseUrl}`
     };
 
     const handleApplyClick = (e, jobId) => {
         e.stopPropagation();
-        navigate(`/ung-tuyen-viec-lam-${isStoreJobs ? 'cua-hang' : 'van-phong'}`, { state: { jobId: jobId } });
-    };
+        window.location.href = `/ung-tuyen-viec-lam/${jobId}`
+    };    
 
     return (
         <>
