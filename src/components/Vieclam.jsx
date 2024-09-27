@@ -152,8 +152,8 @@ function Vieclam() {
                     {relatedJobs && relatedJobs.length > 0 && (
                         <div className="job-detail__relation-jobs">
                             <h2 className="job-detail__relation-jobs-title">Các công việc liên quan</h2>
-                            {relatedJobs.slice().reverse().map((job) => (
-                                <div className="job-list__item" onClick={() => handleJobClick(job)}>
+                            {relatedJobs.slice().reverse().map((job, index) => (
+                                <div className="job-list__item" onClick={() => handleJobClick(job)} key={index}>
                                     <div className={`job-list__item-unit job-list__item-unit--${job.workBlock === 'store' ? 'store' : 'office'}`}>{job.workBlock === 'store' ? 'Khối cửa hàng' : 'Khối văn phòng'}</div>
                                     <div className="job-list__item-body">
                                         <div className="job-list__item-left">
