@@ -1,0 +1,82 @@
+[
+    {
+        "RESCODE": "NPHQPQRU19",
+        "NAME": "Cafe Runam Phu Quoc",
+        "STT": 1
+    },
+    {
+        "RESCODE": "NHCM01GI02",
+        "NAME": "Goody Hai Ba Trung",
+        "STT": 4
+    },
+    {
+        "RESCODE": "NHCM09GO01",
+        "NAME": "Goody Vincom Q9",
+        "STT": 5
+    },
+    {
+        "RESCODE": "NHCM01RU08",
+        "NAME": "Runam Bistro Dong Khoi",
+        "STT": 7
+    },
+    {
+        "RESCODE": "NNTRNTRU03",
+        "NAME": "Runam Bistro Nha Trang",
+        "STT": 8
+    },
+    {
+        "RESCODE": "NHCM01TE02",
+        "NAME": "RuNam Bitexco",
+        "STT": 9
+    },
+    {
+        "RESCODE": "NHCM02RU12",
+        "NAME": "Runam Boutique Estella",
+        "STT": 10
+    },
+    {
+        "RESCODE": "NHCMBTRU09",
+        "NAME": "Runam Boutique LandMark Tower",
+        "STT": 11
+    },
+    {
+        "RESCODE": "NHCM01RU05",
+        "NAME": "Runam Boutique Le Loi",
+        "STT": 12
+    },
+    {
+        "RESCODE": "NHCM01RU17",
+        "NAME": "Runam Boutique Vincom Dong Khoi",
+        "STT": 13
+    },
+    {
+        "RESCODE": "NHCM01RU10",
+        "NAME": "Runam Dor CX Paris",
+        "STT": 15
+    },
+    {
+        "RESCODE": "NVTAHTRU22",
+        "NAME": "Runam Ho Tram",
+        "STT": 16
+    },
+    {
+        "RESCODE": "NHANTHRU23",
+        "NAME": "RuNam Lotte",
+        "STT": 17
+    },
+    {
+        "RESCODE": "NHANHKRU02",
+        "NAME": "Runam Nha Tho - Ha Noi",
+        "STT": 18
+    },
+    {
+        "RESCODE": "NHCM02RU21",
+        "NAME": "Runam Thao Dien - Q2",
+        "STT": 19
+    },
+    {
+        "RESCODE": "NHCM09RU25",
+        "NAME": "Runam Vincom Q9",
+        "STT": 20
+    }
+]
